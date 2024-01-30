@@ -9,6 +9,7 @@ const Container = styled.div`
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
+    border: 1px solid red;
 `
 
 const Announcement = () => {

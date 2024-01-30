@@ -9,12 +9,18 @@ import {useNavigate} from 'react-router-dom';
 
 const Container = styled.div`
     height: 60px;
+    border: 1px solid red;
+    @media (max-width:700px) { 
+        /* max-width :700px ; */
+        /* background-color:black; */
+    }
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid green; */
 `
 const Left = styled.div`
     flex: 1;//like 1 unit for left side 
@@ -41,6 +47,7 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    
 `
 const Input = styled.input`
     border: none;

@@ -86,6 +86,13 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   ${mobile({ display: "none" })}
+  border:2px solid black;
+  @media (max-width:700px) { 
+        height: 60vh;
+        flex-direction: column; /* Stack child elements vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+    }
 `;
 
 const Arrow = styled.div`
@@ -120,20 +127,30 @@ const Slide = styled.div`
   display: flex;
   align-items: center;
   background-color: #${(props) => props.bg};
+  @media (max-width:700px) { 
+        height: 60vh;
+    }
 `;
 
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  /* @media (max-width:700px) { 
+        height: auto;
+    } */
 `;
 
 const Image = styled.img`
   height: 100%;
+  
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
+  /* @media (max-width:700px) { 
+        height: auto;
+    } */
 `;
 
 const Title = styled.h1`
@@ -178,7 +195,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>
         ))}

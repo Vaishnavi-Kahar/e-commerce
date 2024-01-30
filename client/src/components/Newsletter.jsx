@@ -9,6 +9,14 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 2px solid red;
+  @media screen and (min-width: 380px) {
+  body {
+    width:50%; 
+    height:30vh;
+    flex-direction: row;
+  }
+}
 `;
 const Title = styled.h1`
   font-size: 70px;

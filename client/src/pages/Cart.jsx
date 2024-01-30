@@ -207,7 +207,7 @@ const Cart = () => {
         <Bottom>
           <Info>
             {
-            cart&& cart.products && cart.products  .map(product=>(
+            cart&& cart.products && cart.products.map(product=>(
             <Product>
               <ProductDetail>
                 <Image src={product.img} />
